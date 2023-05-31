@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
 const LiquidosPenetrantesSchema = mongoose.Schema({
+    nombre_forma: {
+        type: Schema.ObjectId, ref: 'AreaUnitariaKm'
+    },
     fechaInicio: {
         type: String,
         required: true
