@@ -3,95 +3,104 @@ const mongoose = require('mongoose');
 const DisenoSchema = mongoose.Schema({
     nombre_propio: {
         type: String,
-        required: true
+        required: true,
+        default: '',
     },
     origen_km: {
         type: String,
-        required: true
+        required: true,
+        default: '',
     },
     destino_km: {
         type: String,
-        required: true
+        required: true,
+        default: '',
     },
     origen_coordenadas: {
         type: String,
-        required: true
+        required: true,
+        default: '',
     },
     destino_coordenadas: {
         type: String,
-        required: true
+        required: true,
+        default: '',
     },
     longitud: {
-        type: String,
-        required: true
+        type: Number,
+        default: 0,
     },
     diametro_mm: {
         type: Number,
-        required: true
+        default: 0,
     },
     diametro_inch: {
         type: Number,
-        required: true
+        default: 0,
     },
     espesor_pared_mm: {
         type: Number,
-        required: true
+        default: 0,
     },
     espesor_pared_inch: {
         type: Number,
-        required: true
+        default: 0,
     },
     especificacion_material: {
         type: String,
-        required: true
+        default: '',
     },
     temperatura_diseno_c: {
         type: Number,
-        required: true
+        default: 0,
     },
     temperatura_diseno_f: {
         type: Number,
-        required: true
+        default: 0,
     },
     fecha_fabricacion: {
         type: String,
-        required: true
+        default: '',
     },
     resistencia_traccion: {
-        type: String,
-        required: true
+        type: Number,
+        default: 0,
     },
     elemento_maximo_c: {
         type: String,
-        required: true
+        default: '',
     },
     limite_elastico: {
-        type: String,
-        required: true
+        type: Number,
+        default: 0,
     },
     fecha_construccion: {
         type: String,
-        required: true
+        default: '',
     },
     metodo_recubrimiento: {
         type: String,
-        required: true
+        default: '',
     },
     tipo_suelo: {
         type: String,
-        required: true
+        default: '',
     },
     material_relleno: {
         type: String,
-        required: true
+        default: '',
     },
     proteccion_catodica: {
         type: String,
-        required: true
+        default: '',
     },
     tipo_recubrimiento: {
         type: String,
-        required: true
+        default: '',
+    },
+    nombre_forma: {
+        type: String,
+        default: 'Formulario Diseño'
     },
     fecha_creacion: {
         type: Date,
