@@ -29,7 +29,9 @@ exports.obtenerDisenos = async (req, res) => {
 exports.actualizarDiseno = async (req, res) => {
     try {
         const {
-            nombre_propio,
+            clave,
+            area_unitaria,
+            tramo,
             origen_km,
             destino_km,
             origen_coordenadas,
@@ -59,7 +61,9 @@ exports.actualizarDiseno = async (req, res) => {
         res.status(404).json({ msg: "No existe el diseño" });
         }
 
-        diseno.nombre_propio = nombre_propio;
+        diseno.clave = clave;
+        diseno.area_unitaria = area_unitaria;
+        diseno.tramo = tramo;
         diseno.origen_km = origen_km;
         diseno.destino_km = destino_km;
         diseno.origen_coordenadas = origen_coordenadas;

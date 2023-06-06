@@ -1,7 +1,15 @@
 const mongoose = require('mongoose');
 
 const DisenoSchema = mongoose.Schema({
-    nombre_propio: {
+    clave: {
+        type: String,
+        default: '',
+    },
+    area_unitaria: {
+        type: Number,
+        default: '',
+    },
+    tramo: {
         type: String,
         required: true,
         default: '',
@@ -18,12 +26,10 @@ const DisenoSchema = mongoose.Schema({
     },
     origen_coordenadas: {
         type: String,
-        required: true,
         default: '',
     },
     destino_coordenadas: {
         type: String,
-        required: true,
         default: '',
     },
     longitud: {
