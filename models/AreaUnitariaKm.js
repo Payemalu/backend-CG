@@ -1,42 +1,33 @@
 const mongoose = require('mongoose');
 
 const AreaUnitariaKmSchema = mongoose.Schema({
-    tramo: {
-        type: Number,
-        required: true
-    },
-    nombre_tramo: {
+    area_unitaria: {
         type: String,
-        required: true
     },
-    cve_au: {
-        type: Number,
-        required: true
-    },
-    km_inicial: {
+    clave: {
         type: String,
-        required: true
     },
-    km_final: {
+    kilometro_destino: {
         type: String,
-        required: true
+    },
+    kilometro_inicial: {
+        type: String,
+    },
+    km_destino_ddv: {
+        type: String,
     },
     km_inicial_ddv: {
         type: String,
-        required: true
     },
-    km_final_ddv: {
+    nombre_tramo: {
         type: String,
-        required: true
     },
-    cve: {
-        type: String,
-        required: true
+    tramo: {
+        type: Number,
     },
-    area_unitaria: {
-        type: String,
-        required: true
-    },
+    // cve_au: {
+    //     type: Number,
+    // },
     fecha_creacion: {
         type: Date,
         default: Date.now()

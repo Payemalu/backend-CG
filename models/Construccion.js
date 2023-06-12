@@ -1,22 +1,28 @@
 const mongoose = require('mongoose');
 
-const DisenoSchema = mongoose.Schema({
+const ConstruccionSchema = mongoose.Schema({
+    /* Identificacion *******/
+    /* obligatorios *********/
+    numerador: {
+        type: Number,
+        required: true,
+        default: 1
+    },
     clave: {
         type: String,
         required: true,
-        default: '',
+        default: ''
     },
     area_unitaria: {
-        type: Number,
-        default: '',
+        type: String,
+        default: ''
     },
     nombre_tramo: {
-        type: Number,
-        required: true,
+        type: String,
         default: '',
     },
     tramo: {
-        type: String,
+        type: Number,
         required: true,
         default: '',
     },
@@ -30,6 +36,9 @@ const DisenoSchema = mongoose.Schema({
         required: true,
         default: ''
     },
+
+    /* Identificacion *******/
+    /* No obligatorios ******/
     origen_coordenadas: {
         type: String,
         default: '',
@@ -38,54 +47,9 @@ const DisenoSchema = mongoose.Schema({
         type: String,
         default: '',
     },
-    longitud: {
-        type: Number,
-        default: 0,
-    },
-    diametro_mm: {
-        type: Number,
-        default: 0,
-    },
-    diametro_inch: {
-        type: Number,
-        default: 0,
-    },
-    espesor_pared_mm: {
-        type: Number,
-        default: 0,
-    },
-    espesor_pared_inch: {
-        type: Number,
-        default: 0,
-    },
-    especificacion_material: {
-        type: String,
-        default: '',
-    },
-    temperatura_diseno_c: {
-        type: Number,
-        default: 0,
-    },
-    temperatura_diseno_f: {
-        type: Number,
-        default: 0,
-    },
-    fecha_fabricacion: {
-        type: String,
-        default: '',
-    },
-    resistencia_traccion: {
-        type: Number,
-        default: 0,
-    },
-    elemento_maximo_c: {
-        type: String,
-        default: '',
-    },
-    limite_elastico: {
-        type: Number,
-        default: 0,
-    },
+
+    /* Construccion *********/
+    /* No obligatorios ******/
     fecha_construccion: {
         type: String,
         default: '',
@@ -112,7 +76,7 @@ const DisenoSchema = mongoose.Schema({
     },
     nombre_forma: {
         type: String,
-        default: 'Formulario Diseño'
+        default: 'Formulario Construccion'
     },
     fecha_creacion: {
         type: Date,
@@ -120,4 +84,4 @@ const DisenoSchema = mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Diseno', DisenoSchema);
+module.exports = mongoose.model('Construccion', ConstruccionSchema);

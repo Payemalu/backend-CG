@@ -26,7 +26,7 @@ const DuctoSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    CVE: {
+    clave: {
         type: String,
         required: true
     },

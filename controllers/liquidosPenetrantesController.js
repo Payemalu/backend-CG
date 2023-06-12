@@ -30,7 +30,7 @@ exports.crearLiquidoPenetrante = async (req, res) => {
 //     try {
 //         const {
 //             FID,
-//             CVE,
+//             clave,
 //             SIST,
 //             CVE_DUC,
 //             DUCTO,

@@ -31,19 +31,11 @@ exports.actualizarDiseno = async (req, res) => {
         const {
             clave,
             area_unitaria,
+            km_inicial_ddv,
+            km_destino_ddv,
             tramo,
-            origen_km,
-            destino_km,
             origen_coordenadas,
             destino_coordenadas,
-            longitud,
-            diametro_mm,
-            diametro_inch,
-            espesor_pared_mm,
-            espesor_pared_inch,
-            especificacion_material,
-            temperatura_diseno_c,
-            temperatura_diseno_f,
             fecha_fabricacion,
             resistencia_traccion,
             elemento_maximo_c,
@@ -64,8 +56,8 @@ exports.actualizarDiseno = async (req, res) => {
         diseno.clave = clave;
         diseno.area_unitaria = area_unitaria;
         diseno.tramo = tramo;
-        diseno.origen_km = origen_km;
-        diseno.destino_km = destino_km;
+        diseno.km_inicial_ddv = km_inicial_ddv;
+        diseno.km_destino_ddv = km_destino_ddv;
         diseno.origen_coordenadas = origen_coordenadas;
         diseno.destino_coordenadas = destino_coordenadas;
         diseno.longitud = longitud;

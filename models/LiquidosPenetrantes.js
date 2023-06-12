@@ -1,206 +1,211 @@
 const mongoose = require('mongoose');
 
 const LiquidosPenetrantesSchema = mongoose.Schema({
-    nombre_forma: {
-        type: mongoose.Schema.Types.ObjectId, ref: 'AreaUnitariaKm'
-    },
-    fechaInicio: {
+    fecha_inicio: {
         type: String,
-        required: true
+        required: true,
+        default: ''
     },
-    fechaFinal: {
+    fecha_final: {
         type: String,
-        required: true
+        required: true,
+        default: ''
     },
-    numeroReporte: {
+    numero_reporte: {
         type: String,
-        required: true
+        required: true,
+        default: ''
     },
     sistema: {
         type: String,
-        required: true
+        required: true,
+        default: ''
     },
-    presionOperacion: {
+    presion_operacion: {
         type: String,
-        required: true
+        required: true,
+        default: ''
     },
-    temperaturaOperacion: {
+    temperatura_operacion: {
         type: String,
-        required: true
+        required: true,
+        default: ''
     },
-    areaUnitaria: {
+    kilometro_inicial: {
         type: String,
-        required: true
+        required: true,
+        default: ''
     },
-    kilometroInicial: {
+    area_unitaria: {
         type: String,
-        required: true
+        required: true,
+        default: ''
     },
-    kilometroDestino: {
+    kilometro_destino: {
         type: String,
-        required: true
+        required: true,
+        default: ''
     },
-    descripcionObra: {
+    descripcion_obra: {
         type: String,
-        required: true
+        default: ''
     },
-    nombreLineaTramo: {
+    nombre_linea_tramo: {
         type: String,
-        required: true
+        default: ''
     },
-    localizacionCoordenadas: {
+    localizacion_coordenadas: {
         type: Number,
-        required: true
+        default: ''
     },
-    localizacionKilometraje: {
+    localizacion_kilometraje: {
         type: String,
-        required: true
+        default: ''
     },
-    desActividadesInspeccion: {
+    des_actividades_inspeccion: {
         type: String,
-        required: true
+        default: ''
     },
-
     diametro: {
         type: Number,
-        required: true
+        default: ''
     },
-    espesorNominal: {
+    espesor_nominal: {
         type: Number,
-        required: true
+        default: ''
     },
     especificacion: {
         type: String,
-        required: true
+        default: ''
     },
-    zonaInspeccionada: {
+    zona_inspeccionada: {
         type: String,
-        required: true
+        default: ''
     },
-    tipoMaterial: {
+    tipo_material: {
         type: String,
-        required: true
+        default: ''
     },
     dimensiones: {
         type: String,
-        required: true
+        default: ''
     },
-    descripcionPieza: {
+    descripcion_pieza: {
         type: String,
-        required: true
+        default: ''
     },
 
-    temperaturaPrueba: {
+    temperatura_prueba: {
         type: Number,
-        required: true
+        default: ''
     },
-    acabadoSuperficial: {
+    acabado_superficial: {
         type: String,
-        required: true
+        default: ''
     },
     iluminacion: {
         type: String,
-        required: true
+        default: ''
     },
-    materialAbsorbente: {
+    material_absorbente: {
         type: String,
-        required: true
+        default: ''
     },
-    codigoAplicable: {
+    codigo_aplicable: {
         type: String,
-        required: true
+        default: ''
     },
     parte: {
         type: Number,
-        required: true
+        default: ''
     },
     seccion: {
         type: String,
-        required: true
+        default: ''
     },
     procedimiento: {
         type: String,
-        required: true
+        default: ''
     },
-    tecnicaMetodo: {
+    tecnica_metodo: {
         type: String,
-        required: true
+        default: ''
     },
     aplicacion: {
         type: String,
-        required: true
+        default: ''
     },
     visible: {
         type: Boolean,
-        required: true
+        default: ''
     },
     fluorescente: {
         type: Boolean,
-        required: true
+        default: ''
     },
-    tiempoPenetracion: {
+    tiempo_penetracion: {
         type: String,
-        required: true
+        default: ''
     },
-    marcaPenetrante: {
+    marca_penetrante: {
         type: String,
-        required: true
+        default: ''
     },
-    numLotePenetrante: {
+    num_lote_penetrante: {
         type: String,
-        required: true
+        default: ''
     },
-    tiempoSecado: {
+    tiempo_secado: {
         type: String,
-        required: true
+        default: ''
     },
-    marcaRemovedor: {
+    marca_removedor: {
         type: String,
-        required: true
+        default: ''
     },
-    numLoteRemovedor: {
+    num_lote_removedor: {
         type: String,
-        required: true
+        default: ''
     },
-    tiempoRevelado: {
+    tiempo_revelado: {
         type: String,
-        required: true
+        default: ''
     },
-    marcaRevelador: {
+    marca_revelador: {
         type: String,
-        required: true
+        default: ''
     },
-    numLoteMarca: {
+    num_lote_marca: {
         type: String,
-        required: true
+        default: ''
     },
-    tipoGrupoPenetracion: {
+    tipo_grupo_penetracion: {
         type: String,
-        required: true
+        default: ''
     },
-    tipoPenetrante: {
+    tipo_penetrante: {
         type: String,
-        required: true
+        default: ''
     },
-    tipoRevelador: {
+    tipo_revelador: {
         type: String,
-        required: true
+        default: ''
     },
     referencia: {
         type: String,
-        required: true
+        default: ''
     },
     elemento: {
         type: String,
-        required: true
+        default: ''
     },
     descripcion: {
         type: String,
-        required: true
+        default: ''
     },
     identificacion: {
         type: String,
-        required: true
+        default: ''
     },
 
     tbl_identificacion: {
@@ -230,16 +235,19 @@ const LiquidosPenetrantesSchema = mongoose.Schema({
     tbl_resultado_dictamen: {
         type: Boolean,
     },
-
     resultado: {
         type: Number,
-        required: true
+        default: ''
     },
     observaciones: {
         type: String,
-        required: true
+        default: ''
     },
-    fechaCreacionLP: {
+    // nombre_forma: {
+    //     type: mongoose.Schema.Types.ObjectId, ref: 'AreaUnitariaKm',
+    //     default: 'Formulario Líquidos Penetrantes'
+    // },
+    fecha_creacion_lp: {
         type: Date,
         default: Date.now()
     }
