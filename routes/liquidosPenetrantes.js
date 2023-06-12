@@ -5,9 +5,5 @@ const liquidosPenetrantesController = require('../controllers/liquidosPenetrante
 
 // app/liquidosPenetrantes
 router.post('/', liquidosPenetrantesController.crearLiquidoPenetrante);
-// router.get('/', liquidosPenetrantesController.obtenerLiquidosPenetrantes);
-// router.put('/:id', liquidosPenetrantesController.actualizarLiquidoPenetrante);
-// router.get('/:id', liquidosPenetrantesController.obtenerLiquidoPenetrante);
-// router.delete('/:id', liquidosPenetrantesController.borrarLiquidoPenetrante);
 
 module.exports = router;

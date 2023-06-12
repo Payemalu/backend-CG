@@ -1,26 +1,5 @@
 const mongoose = require('mongoose');
 
-// const DuctoSchema = mongoose.Schema({
-//     DUCTO: {
-//         type: String,
-//         required: true
-//     },
-//     CVE_AU: {
-//         type: String,
-//         required: true
-//     },
-//     AREA_UNI: {
-//         type: String,
-//         required: true
-//     },
-//     FECHA_CREACION: {
-//         type: Date,
-//         default: Date.now()
-//     }
-// });
-
-// let myDecimal = Decimal(Double(0.0));
-
 const DuctoSchema = mongoose.Schema({
     FID: {
         type: Number,

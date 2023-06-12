@@ -243,10 +243,6 @@ const LiquidosPenetrantesSchema = mongoose.Schema({
         type: String,
         default: ''
     },
-    // nombre_forma: {
-    //     type: mongoose.Schema.Types.ObjectId, ref: 'AreaUnitariaKm',
-    //     default: 'Formulario Líquidos Penetrantes'
-    // },
     fecha_creacion_lp: {
         type: Date,
         default: Date.now()

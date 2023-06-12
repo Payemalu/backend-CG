@@ -19,7 +19,6 @@ exports.obtenerDisenos = async (req, res) => {
     try {
         const disenos = await Diseno.find();
         res.json(disenos);
-        console.log('Disenos', disenos);
     } catch (error) {
         console.log(error);
         res.status(500).send("Hubo un error");

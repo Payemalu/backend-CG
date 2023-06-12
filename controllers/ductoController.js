@@ -19,7 +19,6 @@ exports.obtenerDuctos = async (req, res) => {
     try {
         const ductos = await Ducto.find();
         res.json(ductos);
-        console.log('Ductos', ductos);
     } catch (error) {
         console.log(error);
         res.status(500).send("Hubo un error");
